@@ -1,0 +1,66 @@
+header {
+    .overlay {
+        z-index: 0;
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(#00000066, #00000066);
+    }
+
+    position: relative;
+    .nav-link {
+        @media (max-width: 767.98px) {
+           text-transform: uppercase;
+        }
+    }
+    margin-bottom: 6rem;
+    .container {
+        position: relative;
+        z-index: 1;
+        @media (min-width: 1399.98px) {
+            width:1400px;
+        }
+    
+    }
+
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+    background-image: url(../media/desktop/image-hero.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    .navbar {
+        margin-bottom: 6rem;
+        font-family: "Alata";
+
+        .navbar-toggler {
+            border: 0;
+        }
+    }
+
+        
+        h2 {
+            font-size: 4rem;
+            width: min(100%, 40rem);
+            padding : 1.5rem 2rem;
+            margin-bottom: 5rem;
+            border: 2px solid $white;
+            letter-spacing: .05rem;
+            font-family: 'Josefin Sans';
+            text-transform: uppercase;
+            @media (max-width: 520px) {
+                font-size: 3rem;
+            }
+            @media (max-width:575.98px) {
+            max-width: 516px ;
+            margin-inline: auto;
+            }
+        }
+    
+}
+
+.nav-item.nav-link{
+    color: $white;
+}
+
+

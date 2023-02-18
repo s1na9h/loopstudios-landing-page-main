@@ -1,0 +1,112 @@
+main {
+    margin-bottom: 2rem;
+
+    button {
+        padding: 0.2rem 1rem;
+        font-size: 0.8rem;
+        letter-spacing: 0.2rem;
+        font-family: 'Josefin Sans';
+        background-color: transparent;
+        border-width: 1px;
+        align-self: center;       
+    }
+    .row {
+        img {
+            width: 100%;
+        }
+        margin-bottom: 2rem;
+    }
+}
+
+h2{
+    font-family: 'Josefin Sans';
+    text-transform: uppercase;
+}
+
+.image-and-text {
+    position: relative;
+    margin-bottom: 7rem;
+    img {
+        width: min(731px, 100%);
+        @media (max-width: 991.98px) {
+           margin-bottom: 3rem; 
+        }
+    }
+
+    
+.text-for-image {
+    p{
+        font-family: 'Alata';
+        font-size: 0.94rem;
+        @media (max-width:991.98px) {
+            text-align: center;
+        }
+    }
+    @media (min-width:991.98px) {
+        padding-top: 5rem;
+        padding-left: 5rem;
+        background-color: white;
+        position: absolute;
+        bottom: -2px;
+        right: 12px;
+        width: min(100%, 33rem);
+    }
+
+    h2 {
+        @media (max-width: 991.98px) {
+            text-align: center;
+        }
+    }
+
+    }
+} 
+
+.our-creations {
+    margin-bottom: 3rem;
+    justify-content: center;
+    h2 {
+        margin-bottom: 0;
+    }
+
+    @media (min-width: 767.98px) {
+        justify-content: space-between;
+    }
+
+}
+
+
+
+.image-section {
+    .card {
+        position: relative;
+        border-width: 0;
+        .overlay {
+                position: absolute;
+                inset: 0 12px 0 12px;
+                background: linear-gradient(to right,#000000aa 0%, #00000000 70%);
+                @media (min-width: 767.98px) {
+                    background: linear-gradient(to top,#000000aa 0%, #00000000 70%);
+                }
+            }
+        }
+        
+        .card:hover .overlay {
+            background: #ffffffcc;
+            
+        }
+
+        .card:hover h4 {
+            color: black;
+        }
+                
+
+    h4 {
+        z-index: 1;
+        position: absolute;
+        bottom: 1rem;
+        left: 2rem;
+        margin-bottom: 0;
+        color :white;
+        font-family: "Josefin Sans";
+    }
+}

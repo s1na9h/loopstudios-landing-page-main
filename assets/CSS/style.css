@@ -1,0 +1,241 @@
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap");
+header {
+  position: relative;
+  margin-bottom: 6rem;
+  padding-top: 3rem;
+  padding-bottom: 5rem;
+  background-image: url(../media/desktop/image-hero.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+header .overlay {
+  z-index: 0;
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+}
+@media (max-width: 767.98px) {
+  header .nav-link {
+    text-transform: uppercase;
+  }
+}
+header .container {
+  position: relative;
+  z-index: 1;
+}
+@media (min-width: 1399.98px) {
+  header .container {
+    width: 1400px;
+  }
+}
+header .navbar {
+  margin-bottom: 6rem;
+  font-family: "Alata";
+}
+header .navbar .navbar-toggler {
+  border: 0;
+}
+header h2 {
+  font-size: 4rem;
+  width: min(100%, 40rem);
+  padding: 1.5rem 2rem;
+  margin-bottom: 5rem;
+  border: 2px solid hsl(0deg, 0%, 100%);
+  letter-spacing: 0.05rem;
+  font-family: "Josefin Sans";
+  text-transform: uppercase;
+}
+@media (max-width: 520px) {
+  header h2 {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 575.98px) {
+  header h2 {
+    max-width: 516px;
+    margin-inline: auto;
+  }
+}
+
+.nav-item.nav-link {
+  color: hsl(0deg, 0%, 100%);
+}
+
+main {
+  margin-bottom: 2rem;
+}
+main button {
+  padding: 0.2rem 1rem;
+  font-size: 0.8rem;
+  letter-spacing: 0.2rem;
+  font-family: "Josefin Sans";
+  background-color: transparent;
+  border-width: 1px;
+  align-self: center;
+}
+main .row {
+  margin-bottom: 2rem;
+}
+main .row img {
+  width: 100%;
+}
+
+h2 {
+  font-family: "Josefin Sans";
+  text-transform: uppercase;
+}
+
+.image-and-text {
+  position: relative;
+  margin-bottom: 7rem;
+}
+.image-and-text img {
+  width: min(731px, 100%);
+}
+@media (max-width: 991.98px) {
+  .image-and-text img {
+    margin-bottom: 3rem;
+  }
+}
+.image-and-text .text-for-image p {
+  font-family: "Alata";
+  font-size: 0.94rem;
+}
+@media (max-width: 991.98px) {
+  .image-and-text .text-for-image p {
+    text-align: center;
+  }
+}
+@media (min-width: 991.98px) {
+  .image-and-text .text-for-image {
+    padding-top: 5rem;
+    padding-left: 5rem;
+    background-color: white;
+    position: absolute;
+    bottom: -2px;
+    right: 12px;
+    width: min(100%, 33rem);
+  }
+}
+@media (max-width: 991.98px) {
+  .image-and-text .text-for-image h2 {
+    text-align: center;
+  }
+}
+
+.our-creations {
+  margin-bottom: 3rem;
+  justify-content: center;
+}
+.our-creations h2 {
+  margin-bottom: 0;
+}
+@media (min-width: 767.98px) {
+  .our-creations {
+    justify-content: space-between;
+  }
+}
+
+.image-section .card {
+  position: relative;
+  border-width: 0;
+}
+.image-section .card .overlay {
+  position: absolute;
+  inset: 0 12px 0 12px;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.6666666667) 0%, rgba(0, 0, 0, 0) 70%);
+}
+@media (min-width: 767.98px) {
+  .image-section .card .overlay {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.6666666667) 0%, rgba(0, 0, 0, 0) 70%);
+  }
+}
+.image-section .card:hover .overlay {
+  background: rgba(255, 255, 255, 0.8);
+}
+.image-section .card:hover h4 {
+  color: black;
+}
+.image-section h4 {
+  z-index: 1;
+  position: absolute;
+  bottom: 1rem;
+  left: 2rem;
+  margin-bottom: 0;
+  color: white;
+  font-family: "Josefin Sans";
+}
+
+footer {
+  padding-block: 2.5rem;
+  background-color: hsl(0deg, 0%, 0%);
+}
+@media (max-width: 767.98px) {
+  footer .social-row {
+    justify-content: center;
+  }
+}
+@media (min-width: 767.98px) {
+  footer .social-row {
+    justify-content: end;
+  }
+}
+@media (max-width: 767.98px) {
+  footer .row .logo {
+    justify-content: center;
+  }
+}
+@media (min-width: 767.98px) {
+  footer .row .logo {
+    justify-content: start;
+  }
+}
+footer .social-media-icon {
+  list-style-type: none;
+}
+@media (max-width: 767.98px) {
+  footer .social-media-icon {
+    justify-content: center;
+  }
+}
+@media (min-width: 767.98px) {
+  footer .social-media-icon {
+    justify-content: end;
+  }
+}
+footer .links {
+  list-style-type: none;
+}
+@media (max-width: 767.98px) {
+  footer .links {
+    justify-content: center;
+  }
+}
+@media (min-width: 767.98px) {
+  footer .links {
+    justify-content: start;
+  }
+}
+footer .logo-img {
+  display: inline-block;
+  width: 192px;
+  height: 32px;
+}
+footer .nav-link {
+  color: white;
+  text-align: center;
+}
+footer .copyrights {
+  color: hsl(0deg, 0%, 55%);
+}
+@media (max-width: 767.98px) {
+  footer .copyrights {
+    justify-content: center;
+  }
+}
+@media (min-width: 767.98px) {
+  footer .copyrights {
+    justify-content: end;
+  }
+}/*# sourceMappingURL=style.css.map */
